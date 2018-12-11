@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="header container">
+    {% block header %}
+	    {% include '../layouts/component/logo.twig' %}
+	    {% include '../layouts/component/menu.twig' %}
+    {% endblock %}
+  </div>
+
+  <div class="content container">
+  	{% block content %}
+  	{% endblock %}
+  </div>
+
+  <div class="footer">
+  	{% block footer %}
+  	{% endblock %}
+  </div>
+
+</body>
+</html>

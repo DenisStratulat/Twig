@@ -1,0 +1,31 @@
+{% extends "../layouts/layout.twig" %}
+
+{% set title = 'Blog' %}
+
+{% block header %}
+	{% include '../layouts/component/logo.twig' %}
+	{% embed '../layouts/component/menu.twig' %}
+		{% block menu %}
+			<div class="menu-block">
+				<ul class="menu">
+					<li class="menu__item">
+						Blog Item 1
+					</li>
+					<li class="menu__item">
+						Blog Item 2
+					</li>
+					<li class="menu__item">
+						Blog Item 3
+					</li>
+					<li class="menu__item">
+						Blog Item 4
+					</li>
+				</ul>
+			</div>
+		{% endblock %}
+	{% endembed %}
+{% endblock %}
+
+{% block content %}
+	{% include '../layouts/content/blog.twig' %}
+{% endblock %}

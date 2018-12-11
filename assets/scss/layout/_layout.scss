@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.footer {
+  padding: 10px 15px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu__item {
+  padding: 10px 15px;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+}

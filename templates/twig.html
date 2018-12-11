@@ -1,0 +1,84 @@
+{% set title = "Twig.js templating test" %}
+{% set pageTitle = "Use Twig from the start!" %}
+{% set benefits = ["Fast!", "Easy!", "Efficient!"] %}
+
+{% set foo = [ {
+  type: 'First',
+  title: 'Title1',
+  image: '<img src="../images/1.jpeg" alt="1">',
+  body: 'Lorem ipsum dolor sit amet, amet dolores tincidunt te sea.
+         His aliquid epicuri detraxit in, cum tantas populo periculis te. Ei oratio tractatos suscipiantur usu,
+         vel unum latine ne, per modus accumsan cu. Ei vix idque noster.',
+  author: 'author1',
+  link: 'https://twig.symfony.com/'
+}, {
+  type: 'Second',
+  title: 'Title2',
+  image: '<img src="../images/1.jpeg" alt="1">',
+  body: 'Lorem ipsum dolor sit amet, amet dolores tincidunt te sea.
+  His aliquid epicuri detraxit in, cum tantas populo periculis te. Ei oratio tractatos suscipiantur usu,
+  vel unum latine ne, per modus accumsan cu. Ei vix idque noster.',
+  author: 'author2',
+  link: 'https://twig.symfony.com/'
+}, {
+  type: 'Third',
+  title: 'Title3',
+  image: '<img src="../images/1.jpeg" alt="1">',
+  body: 'Lorem ipsum dolor sit amet, amet dolores tincidunt te sea.
+  His aliquid epicuri detraxit in, cum tantas populo periculis te. Ei oratio tractatos suscipiantur usu,
+  vel unum latine ne, per modus accumsan cu. Ei vix idque noster.',
+  author: 'author3',
+  link: 'https://twig.symfony.com/'
+}, {
+  type: 'Fourth',
+  title: 'Title4',
+  image: '<img src="../images/1.jpeg" alt="1">',
+  body: 'Lorem ipsum dolor sit amet, amet dolores tincidunt te sea.
+  His aliquid epicuri detraxit in, cum tantas populo periculis te. Ei oratio tractatos suscipiantur usu,
+  vel unum latine ne, per modus accumsan cu. Ei vix idque noster.',
+  author: 'author4',
+  link: 'https://twig.symfony.com/'
+}, {
+  type: 'Fifth',
+  title: 'Title5',
+  image: '<img src="../images/1.jpeg" alt="1">',
+  body: 'Lorem ipsum dolor sit amet, amet dolores tincidunt te sea.
+  His aliquid epicuri detraxit in, cum tantas populo periculis te. Ei oratio tractatos suscipiantur usu,
+  vel unum latine ne, per modus accumsan cu. Ei vix idque noster.',
+  author: 'author5',
+  link: 'https://twig.symfony.com/'
+}] %}
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <header>
+    <h3>{{ pageTitle }}</h3>hui
+  </header>
+
+  <div class="content">
+    <ul>
+      {% for value in benefits %}
+      <li>{{ value }}</li>
+      {% endfor %}
+    </ul>
+
+    <ul>
+      <li>{{ foo.type }}</li>
+      <li>{{ foo.title }}</li>
+      <li>{{ foo.type }}</li>
+      <li>{{ foo.type }}</li>
+      <li>{{ foo.type }}</li>
+      <li>{{ foo.type }}</li>
+    </ul>
+  </div>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
