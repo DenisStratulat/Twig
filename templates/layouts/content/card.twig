@@ -1,17 +1,14 @@
-{% use "../../object.twig" %}
-{% block card %}
-	<div class="c-article">
-		<div class="c-article__type">
-			{{ card.type }}
-		</div>
-		<div class="c__image c-article__image">
-			{{ card.image }}
-		</div>
-		<div class="c__title c-article__title">
-			{{ card.title }}
-		</div>
-		<div class="c-article__author">
-			{{ card.author }}
-		</div>
+<div class="card">
+	<div class="card__type">
+		{{ type }}
 	</div>
-{% endblock %}
+	<div class="card__image">
+		{{ image }}
+	</div>
+	<div class="card__title">
+		{{ title }}
+	</div>
+	<div class="card__author">
+		{{ author }}
+	</div>
+</div>

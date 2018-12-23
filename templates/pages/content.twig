@@ -10,16 +10,25 @@
 	<section class="block block--card">
 
 		{% for card in foo %}
-			{% include '../layouts/content/card.twig' with vars %}
+			{% include '../layouts/content/card.twig' with {
+				type : card.type,
+				image : card.image,
+				title : card.title,
+				author : card.author,
+			} only %}
 		{% endfor %}
 	</section>
 
 	<h1>Blogs</h1>
 
 	<section class="block block--card">
-
-		{% for card in foo %}
-			{% include '../layouts/content/card.twig' with vars %}
+		{% for blog in foo %}
+			{% include '../layouts/content/card.twig' with {
+				type : blog.type,
+				image : blog.image,
+				title : blog.title,
+				author : blog.author,
+			} only %}
 		{% endfor %}
 	</section>
 {% endblock %}
